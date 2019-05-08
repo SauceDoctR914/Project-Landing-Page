@@ -4,6 +4,9 @@
     sans-serif;
   box-sizing: border-box;
 }
+.html {
+  scroll-behavior: smooth;
+}
 
 .body {
   font-weight: 400;
@@ -66,8 +69,7 @@
   margin: 0 15px;
 }
 
-.support-btn:link,
-.support-btn:visited {
+.support-btn {
   line-height: 1.7;
   text-decoration: none;
   font-size: 12px;
@@ -121,6 +123,7 @@ form {
   height: 50px;
   text-align: center;
   font-size: 14px;
+  color: #000;
 }
 .btn-search {
   height: 49.5px;
@@ -129,4 +132,24 @@ form {
   margin-left: 10px;
   background-color: rgb(72, 217, 143);
   border-radius: 10px;
+}
+.learn-how {
+  display: inline-block;
+}
+.down-arrow {
+  border-radius: 1200px;
+  display: inline-bock;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0px 1px 1px #000;
+  position: relative;
+  width: 50px;
+  background-color: rgb(72, 217, 143);
+}
+
+.down-arrow::after {
+  display: inline-block;
+  content: "↓";
+  font-size: 20px;
+  width: 50px;
 }
