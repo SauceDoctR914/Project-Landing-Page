@@ -1,0 +1,79 @@
+* {
+  color: white;
+  font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana,
+    sans-serif;
+  box-sizing: border-box;
+}
+
+.body {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.header:before {
+  content: "";
+  background-color: #742dd0;
+}
+.header {
+  height: 100vh;
+  /* background-color: #754ede; */
+  background-size: cover;
+  background-position: top;
+  background: linear-gradient(
+    170deg,
+    #742dd0 15%,
+    #754ede 15%,
+    #754ede 60%,
+    #726edf 60%
+  );
+  clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
+}
+/* #7650E0 */
+.navbar {
+  line-height: 6;
+  position: relative;
+  margin: 0 5%;
+}
+
+.my-web {
+  font-size: 12px;
+  display: inline-block;
+}
+
+.nav-options {
+  position: absolute;
+  right: 150px;
+  display: inline-block;
+  font-size: 11px;
+}
+.nav-options span {
+  margin-right: 20px;
+}
+.nav-options span:last-child {
+  margin-right: 40px;
+}
+
+.login-support {
+  font-size: 11px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+.login {
+  margin: 0 15px;
+}
+
+.support-btn {
+  line-height: 1.7;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 25px;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0px 1px 1px #000;
+  position: relative;
+  background-color: rgb(72, 217, 143);
+  color: white;
+}
