@@ -13,10 +13,6 @@
   font-size: 12px;
   line-height: 1.7;
 }
-.header:before {
-  content: "";
-  background-color: #742dd0;
-}
 .header {
   height: 100vh;
   min-height: 600px;
@@ -69,10 +65,12 @@
   display: inline-block;
   position: absolute;
   right: 0;
+  width: 145px;
+  margin-left: 2px;
 }
 
 .login {
-  margin: 0 15px;
+  /* margin: 0 15px; */
 }
 
 .support-btn {
@@ -81,12 +79,18 @@
   font-size: 12px;
   font-weight: bold;
   padding: 5px 25px;
+  margin-left: 10px;
   display: inline-block;
   border-radius: 5px;
-  box-shadow: 0px 1px 1px #000;
+  box-shadow: 0 2px 2px #524e4e;
   position: relative;
   background-color: rgb(72, 217, 143);
   color: white;
+}
+.support-btn:hover {
+  font-size: 12.5px;
+  background-color: rgb(76, 231, 152);
+  box-shadow: 1px 4px 5px #454546;
 }
 
 .text-box {
@@ -132,6 +136,7 @@ form {
 }
 .search-field {
   border-radius: 10px;
+  margin-right: 5px;
   width: 300px;
   height: 40px;
   text-align: center;
@@ -142,9 +147,17 @@ form {
   height: 39.5px;
   width: 100px;
   box-sizing: border-box;
+  box-shadow: 0 2px 3px #524e4e;
   margin-left: 10px;
   background-color: rgb(72, 217, 143);
   border-radius: 10px;
+}
+.btn-search:hover {
+  height: 40px;
+  width: 100px;
+  font-size: 11.5px;
+  background-color: rgb(76, 231, 152);
+  box-shadow: 1px 4px 5px #454546;
 }
 .learn-how-container {
   text-align: center;
@@ -185,9 +198,9 @@ form {
 /* MAIN */
 .main {
   height: 100vh;
-  min-height: 600px;
+  min-height: 630px;
   width: 100%;
-  background: linear-gradient(170deg, white 60.8%, #f7f7f7 60.9%);
+  background: linear-gradient(170deg, white 68.8%, #f7f7f7 68.9%);
   position: relative;
 }
 .main-heading-text {
@@ -212,22 +225,27 @@ form {
   margin-top: 30px;
   line-height: 1.7;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 11.5px;
   font-weight: bold;
-  padding: 5px 25px;
+  padding: 5px 20px;
   display: inline-block;
   border-radius: 8px;
-  box-shadow: 0px 1px 1px #000;
+  box-shadow: 0 2px 3px #777;
   position: relative;
   color: white;
-  width: 230px;
-  line-height: 20px;
+  width: 190px;
+  line-height: 21px;
   height: 30px;
-  background-color: #726edf;
+  background-color: #754ede;
   margin-bottom: 5%;
+}
+.create-account-btn:hover {
+  background-color: #726edf;
+  box-shadow: 1px 4px 5px #454546;
 }
 .card-box {
   text-align: center;
+  padding: 0;
   display: inline-grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(4, 1fr);
@@ -237,35 +255,37 @@ form {
 .our-services-title {
   color: black;
   font-weight: 100;
+  font-size: 15.5px;
 }
 .our-services-title:after {
   content: "";
   display: block;
   height: 0;
   margin: 0 auto;
-  width: 60px;
-  padding-top: 10px;
+  width: 40px;
+  padding-top: 5px;
   border-bottom: 2px solid black;
 }
 .card {
   background-color: #f1f1f1;
   border-radius: 5px;
   width: 400px;
-  height: 125px;
-  box-shadow: 0 1px 1px #777;
-  margin-bottom: 20px;
+  height: 130px;
+  box-shadow: 0 2px 2px #777;
   position: relative;
 }
 .one {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row: 1;
+  margin-bottom: 20px;
 }
 
 .two {
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row: 1;
+  margin-bottom: 20px;
 }
 .three {
   grid-column-start: 1;
@@ -289,6 +309,7 @@ form {
 }
 .card-title {
   position: absolute;
+  box-sizing: content-box;
   color: black;
   font-size: 14px;
   top: 0%;
@@ -307,15 +328,85 @@ form {
   font-weight: 100;
   font-size: 13px;
 }
-
+.footing-nav {
+  z-index: 1000;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  box-sizing: content-box;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  height: 150px;
+  /* line-height: 50px; */
+  color: red;
+}
+.ready-contact {
+  color: red;
+  position: absolute;
+  /* display: inline-bock; */
+  left: 0;
+  bottom: 64%;
+  line-spacing: 300px;
+  width: 255px;
+  text-align: left;
+}
+.ready {
+  color: #726edf;
+  font-size: 18px;
+  font-weight: 500;
+}
+.create-act {
+  color: #742dd0;
+}
+.btn-container {
+  position: absolute;
+  right: 0;
+  bottom: 54%;
+  display: inline-block;
+}
+.contact-us {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  box-shadow: 0 2px 3px #777;
+  border-radius: 7px;
+  line-height: 1.7;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 15px;
+}
 /* FOOTER */
 
 /* add linear gradient for top of footer to match bottom of main so that I can fit what I need on main" */
 .footer {
-  height: 50vh;
-  min-height: 200px;
-  background: linear-gradient(180deg, #f7f7f7 24.8%, black 24.9%);
+  position: relative;
+  height: 30vh;
+  min-height: 210px;
+  background-color: #754ede;
+  /* background: linear-gradient(180deg, #f7f7f7 14.8%, #754ede 14.9%); */
 }
 .footer-main {
   display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 50px;
+  left: 10%;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  justify-content: space-around;
+}
+.website {
+  height: 50px;
+}
+
+.email {
+}
+.address {
+  display: flex;
+  flex-direction: column;
 }
