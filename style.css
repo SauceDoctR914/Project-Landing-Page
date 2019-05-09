@@ -19,6 +19,7 @@
 }
 .header {
   height: 100vh;
+  min-height: 600px;
   width: 100%;
   /* background-color: #754ede; */
   background-size: cover;
@@ -44,6 +45,7 @@
 
 .my-web {
   height: 100%;
+  min-height: 800px;
   font-size: 12px;
   display: inline-block;
   position: absolute;
@@ -183,13 +185,14 @@ form {
 /* MAIN */
 .main {
   height: 100vh;
+  min-height: 600px;
   width: 100%;
   background: linear-gradient(170deg, white 60.8%, #f7f7f7 60.9%);
   position: relative;
 }
 .main-heading-text {
   position: absolute;
-  top: 15%;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -221,7 +224,7 @@ form {
   line-height: 20px;
   height: 30px;
   background-color: #726edf;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 .card-box {
   text-align: center;
@@ -238,16 +241,17 @@ form {
 .our-services-title:after {
   content: "";
   display: block;
+  height: 0;
   margin: 0 auto;
   width: 60px;
   padding-top: 10px;
-  border-bottom: 3px solid black;
+  border-bottom: 2px solid black;
 }
 .card {
   background-color: #f1f1f1;
   border-radius: 5px;
   width: 400px;
-  height: 150px;
+  height: 125px;
   box-shadow: 0 1px 1px #777;
   margin-bottom: 20px;
   position: relative;
@@ -305,7 +309,10 @@ form {
 }
 
 /* FOOTER */
+
+/* add linear gradient for top of footer to match bottom of main so that I can fit what I need on main" */
 .footer {
-  height: 30vh;
+  height: 100vh;
+  min-height: 200px;
   background-color: black;
 }
