@@ -198,7 +198,7 @@ form {
 /* MAIN */
 .main {
   height: 100vh;
-  min-height: 630px;
+  min-height: 800px;
   width: 100%;
   background: linear-gradient(170deg, white 68.8%, #f7f7f7 68.9%);
   position: relative;
@@ -209,6 +209,9 @@ form {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+}
+.main-heading-header {
+  height: 40%;
 }
 .main-heading-pgph {
   margin: 0 10%;
@@ -251,6 +254,9 @@ form {
   grid-template-columns: repeat(4, 1fr);
   width: 830px;
   align-items: center;
+}
+.our-services-footer {
+  height: 60%;
 }
 .our-services-title {
   color: black;
@@ -330,12 +336,11 @@ form {
 }
 .footing-nav {
   z-index: 1000;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  box-sizing: content-box;
+  margin: 0
   display: inline-block;
   width: 100%;
-  position: relative;
+  position: absolute;
+  bottom: 0;
   height: 150px;
   /* line-height: 50px; */
   color: red;
@@ -401,7 +406,7 @@ form {
   justify-content: space-around;
 }
 .website {
-  height: 50px;
+  height: 20px;
 }
 
 .email {
