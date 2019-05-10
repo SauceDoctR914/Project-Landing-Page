@@ -15,6 +15,7 @@
 }
 .header {
   height: 100vh;
+  min-width: 800px;
   min-height: 600px;
   width: 100%;
   /* background-color: #754ede; */
@@ -199,6 +200,7 @@ form {
 .main {
   height: 100vh;
   min-height: 800px;
+  min-width: 800px;
   width: 100%;
   background: linear-gradient(170deg, white 68.8%, #f7f7f7 68.9%);
   position: relative;
@@ -304,12 +306,13 @@ form {
   grid-row: 2;
 }
 
-.image-div {
-  margin: 0;
+img {
+  margin-top: 20px;
+  align-content: center;
   position: absolute;
+  background-color: #f1f1f1;
   left: 0;
   top: 0;
-  background-color: red;
   height: 100px;
   width: 100px;
 }
@@ -347,8 +350,9 @@ form {
 .ready-contact {
   color: red;
   position: absolute;
-  /* display: inline-bock; */
+  display: inline-bock;
   left: 0;
+  margin-left: 10%;
   bottom: 64%;
   line-spacing: 300px;
   width: 255px;
@@ -357,15 +361,17 @@ form {
 .ready {
   color: #726edf;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 300;
 }
 .create-act {
-  color: #742dd0;
+  color: #6426b4;
+  font-weight: 300;
 }
 .btn-container {
   position: absolute;
   right: 0;
   bottom: 54%;
+  margin-right: 10%;
   display: inline-block;
 }
 .contact-us {
@@ -384,9 +390,11 @@ form {
 
 /* add linear gradient for top of footer to match bottom of main so that I can fit what I need on main" */
 .footer {
+  overflow-x: hidden;
   position: relative;
   height: 30vh;
   min-height: 210px;
+  min-width: 800px;
   background-color: #754ede;
   /* background: linear-gradient(180deg, #f7f7f7 14.8%, #754ede 14.9%); */
 }
@@ -396,7 +404,7 @@ form {
   position: absolute;
   bottom: 50px;
   margin: 0 12%;
-  width: 100%;
+  min-width: 500px;
 }
 
 .footer-links {
@@ -411,7 +419,8 @@ form {
   margin-right: 0;
 }
 .website {
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 8px;
   height: 20px;
 }
 
@@ -437,6 +446,7 @@ form {
   text-decoration: none;
 }
 .footer-icons {
+  margin-top: 5px;
   display: flex;
   flex-direction: column;
 }
