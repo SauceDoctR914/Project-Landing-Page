@@ -326,7 +326,7 @@ img {
 }
 .card-title:after {
   content: "￫";
-  font-size: 30px;
+  font-size: 20px;
 }
 .text {
   text-align: left;
@@ -334,6 +334,8 @@ img {
   left: 110px;
   top: 40%;
   color: #777;
+  box-sizing: content-box;
+  margin-top: 3%;
   font-weight: 100;
   font-size: 13px;
 }
@@ -341,14 +343,13 @@ img {
   margin: 0;
   display: inline-block;
   width: 100%;
+  min-width: 800px;
   position: absolute;
   bottom: 0;
   height: 150px;
   /* line-height: 50px; */
-  color: red;
 }
 .ready-contact {
-  color: red;
   position: absolute;
   display: inline-bock;
   left: 0;
@@ -377,7 +378,7 @@ img {
 .contact-us {
   text-decoration: none;
   color: black;
-  background-color: white;
+  background-color: whitergb(233, 233, 233);
   box-shadow: 0 2px 3px #777;
   border-radius: 7px;
   line-height: 1.7;
@@ -385,7 +386,14 @@ img {
   font-size: 14px;
   font-weight: bold;
   padding: 5px 15px;
+  height: 30px;
 }
+
+.contact-us:hover {
+  background-color: white;
+  box-shadow: 0 4px 5px #777;
+}
+
 /* FOOTER */
 
 /* add linear gradient for top of footer to match bottom of main so that I can fit what I need on main" */
@@ -403,7 +411,8 @@ img {
   flex-direction: row;
   position: absolute;
   bottom: 50px;
-  margin: 0 12%;
+  box-sizing: content-box;
+  justify-content: center;
   width: 100%;
 }
 
@@ -452,6 +461,7 @@ img {
 }
 .fa {
   font-size: 20px;
+  margin-top: 10px;
   text-decoration: none;
   color: black;
 }
