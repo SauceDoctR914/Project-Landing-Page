@@ -15,8 +15,8 @@
 }
 .header {
   height: 100vh;
-  min-width: 800px;
-  min-height: 600px;
+  min-width: 1000px;
+  min-height: 700px;
   width: 100%;
   /* background-color: #754ede; */
   background-size: cover;
@@ -41,8 +41,6 @@
 }
 
 .my-web {
-  height: 100%;
-  min-height: 800px;
   font-size: 12px;
   display: inline-block;
   position: absolute;
@@ -199,8 +197,10 @@ form {
 /* MAIN */
 .main {
   height: 100vh;
-  min-height: 800px;
-  min-width: 800px;
+  display: flex;
+  justify-content: center;
+  min-height: 700px;
+  min-width: 1000px;
   width: 100%;
   background: linear-gradient(170deg, white 68.8%, #f7f7f7 68.9%);
   position: relative;
@@ -340,22 +340,27 @@ img {
   font-size: 13px;
 }
 .footing-nav {
-  margin: 0;
-  display: inline-block;
-  width: 100%;
-  min-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 35%;
+  width: 80%;
+  min-width: 830px;
+  max-width: 1320px;
   position: absolute;
   bottom: 0;
-  height: 150px;
+
   /* line-height: 50px; */
 }
 .ready-contact {
-  position: absolute;
+  justify-content: flex-start;
+  /* position: absolute;
   display: inline-bock;
-  left: 0;
-  margin-left: 10%;
-  bottom: 64%;
+  left: 0; */
+  /* margin-left: 10%;
+  bottom: 64%; */
   line-spacing: 300px;
+  margin-right: 200px;
   width: 255px;
   text-align: left;
 }
@@ -369,10 +374,12 @@ img {
   font-weight: 300;
 }
 .btn-container {
-  position: absolute;
+  justify-content: flex-end;
+  /* position: absolute;
   right: 0;
   bottom: 54%;
-  margin-right: 10%;
+  margin-: 10%; */
+  min-width: 340px;
   display: inline-block;
 }
 .contact-us {
@@ -399,18 +406,21 @@ img {
 /* add linear gradient for top of footer to match bottom of main so that I can fit what I need on main" */
 .footer {
   overflow-x: hidden;
+  display: flex;
+  align-items: center;
   position: relative;
   height: 30vh;
   min-height: 210px;
-  min-width: 800px;
+  min-width: 1000px;
   background-color: #754ede;
   /* background: linear-gradient(180deg, #f7f7f7 14.8%, #754ede 14.9%); */
 }
 .footer-main {
   display: flex;
   flex-direction: row;
-  position: absolute;
-  bottom: 50px;
+  position: relative;
+  /* transform: translateY(50%); */
+  /* bottom: 50px; */
   box-sizing: content-box;
   justify-content: center;
   width: 100%;
