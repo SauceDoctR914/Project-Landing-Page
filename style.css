@@ -58,11 +58,9 @@ body {
 .nav-options {
   position: absolute;
   top: 0;
-  margin-left: 55%;
-  /* right: 19%; */
-  /* width: 25%; */
-  display: inline-block;
+  margin-left: 51%;
   font-size: 12px;
+  /* min-width: 300px; */
 }
 .nav-options a {
   margin-right: 20px;
@@ -409,7 +407,6 @@ img {
   box-shadow: 0 2px 3px #777;
   border-radius: 7px;
   line-height: 1.7;
-  text-decoration: none;
   font-size: 14px;
   font-weight: bold;
   padding: 5px 15px;
@@ -584,7 +581,7 @@ img {
   .support-btn {
     position: relative;
     display: flex;
-    width: 25%;
+    width: 96px;
     right: 0;
     top: 15px;
     margin: 0 auto;
@@ -667,9 +664,8 @@ img {
     height: 5em;
   }
   .create-account-btn {
-    width: 18em;
     height: 3.5em;
-    line-height: 2.7em;
+    width: 150px;
     font-size: 0.7em;
   }
   .footing-nav {
@@ -684,28 +680,18 @@ img {
   }
   .btn-container {
     margin-left: 5%;
-    width: 51%;
+    width: 41%;
   }
   .ready {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .create-act {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
   .contact-us {
-    text-decoration: none;
-    color: black;
-    background-color: #f1f1f1;
-    box-shadow: 0 2px 3px #777;
-    border-radius: 7px;
-    line-height: 1.7;
-    text-decoration: none;
     font-size: 0.8em;
-    font-weight: bold;
-    padding: 5px 15px;
-    height: 30px;
-    margin-left: 18%;
+    margin-left: 20%;
   }
 
   .footer {
@@ -732,6 +718,8 @@ img {
   }
   .email {
     margin-left: 3%;
+    margin-bottom: 0;
+    height: 28px;
   }
   .address {
     margin-top: 5%;
@@ -780,17 +768,14 @@ img {
     font-size: 1.1em;
     font-weight: 800;
   }
-  .email {
-    margin-bottom: 0;
-    height: 28px;
-  }
+
   .fa {
   }
   .fa-facebook-square {
   }
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 770px){
   body {
   }
   .support-btn {
@@ -811,7 +796,10 @@ img {
     width: 200px;
   }
   .contact-us {
-    margin-left: 17%;
+    margin-left: 18%;
+  }
+  .create-account-btn {
+    width: 150px
   }
   .footer-main {
     width: 470px;
@@ -822,12 +810,21 @@ img {
   }
 }
 /* 600 */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 770px){
   body {
   }
+  .create-account-btn {
+    width: 170px;
+    height: 3.2em;
+    line-height: 2em;
+    font-size: 0.8em;
+  }
+  .contact-us{
+    height: 3.2em;
+  }
 }
-/* 768 */
-@media only screen and (min-width: 768px) and (max-width: 990px) {
+/* 771 */
+@media only screen and (min-width: 771px) and (max-width: 990px) {
   body {
     width: 100%;
     overflow-x: hidden;
@@ -912,7 +909,6 @@ img {
   }
   .create-account-btn {
     width: 18em;
-    height: 3.2em;
     line-height: 2.7em;
     font-size: 0.8em;
   }
@@ -959,4 +955,6 @@ img {
 @media only screen and (min-width: 768px) and (max-width: 990px) {
   body {
   }
+
+
 }
