@@ -62,7 +62,9 @@ body {
 
 .nav-options {
   position: absolute;
-  right: 19%;
+  top: 0;
+  margin-left: 55%;
+  /* right: 19%; */
   /* width: 25%; */
   display: inline-block;
   font-size: 11px;
@@ -587,9 +589,8 @@ img {
   .nav-options {
     display: flex;
     flex-direction: column;
-    width: 100vw;
     padding: 0;
-    margin: 0;
+    margin: auto;
     transform: translateX(9%);
     text-align: center;
     position: relative;
@@ -811,7 +812,7 @@ img {
   .navbar {
     line-height: 6;
     position: relative;
-    width: 90%;
+    width: 100%;
     text-decoration: none;
     height: 10%;
     margin: 0;
@@ -851,9 +852,9 @@ img {
     display: inline-block;
     border-radius: 5px;
     box-shadow: 0 2px 2px #524e4e;
-    position: absolute;
+    position: fixed;
     z-index: 990;
-    right: 9%;
+    right: 6%;
     top: 17px;
   }
   .card-box {
