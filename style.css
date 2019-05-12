@@ -59,25 +59,17 @@ body {
 .nav-options {
   position: absolute;
   top: 0;
-  margin-left: 55%;
-  /* right: 19%; */
-  /* width: 25%; */
-  display: inline-block;
+  margin-left: 54%;
   font-size: 12px;
 }
 .nav-options a {
   margin-right: 20px;
   text-decoration: none;
 }
-/* .nav-options a:last-child {
-  text-decoration: none;
-  margin-left: 20%;
-} */
 
 .login {
   text-decoration: none;
   margin-left: 15%;
-  /* margin: 0 15px; */
 }
 
 .support-btn {
@@ -277,7 +269,6 @@ form {
   display: inline-grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(4, 1fr);
-  /* max-width: 830px; */
   align-items: center;
 }
 .our-services-footer {
@@ -303,7 +294,6 @@ form {
 .card {
   background-color: #f1f1f1;
   border-radius: 5px;
-  /* width: 400px; */
   width: 90%;
   height: 125px;
   box-shadow: 0 2px 2px #777;
@@ -315,7 +305,6 @@ form {
   grid-column-end: 3;
   grid-row: 1;
   margin-bottom: 10px;
-  /* margin-right: 10px; */
 }
 
 .two {
@@ -323,7 +312,6 @@ form {
   grid-column-end: 5;
   grid-row: 1;
   margin-bottom: 10px;
-  /* margin-left: 10px; */
 }
 .three {
   grid-column-start: 1;
@@ -378,7 +366,8 @@ img {
 
   height: 20%;
 
-  width: 62%;
+  width: 68%;
+
   position: absolute;
   bottom: 0;
 
@@ -426,7 +415,6 @@ img {
 
 /* FOOTER */
 
-/* add linear gradient for top of footer to match bottom of main so that I can fit what I need on main" */
 .footer {
   overflow-x: hidden;
   display: flex;
@@ -434,17 +422,12 @@ img {
   position: relative;
 
   height: 35vh;
-  /* min-height: 210px;
-  min-width: 1000px; */
   background-color: #754ede;
-  /* background: linear-gradient(180deg, #f7f7f7 14.8%, #754ede 14.9%); */
 }
 .footer-main {
   display: flex;
   flex-direction: row;
   position: relative;
-  /* transform: translateY(50%); */
-  /* bottom: 50px; */
   box-sizing: content-box;
   justify-content: center;
   width: 100%;
@@ -530,7 +513,7 @@ img {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 305px) and (max-width: 768px) {
+@media screen and (min-width: 305px) and (max-width: 770px) {
   body {
     overflow-x: hidden;
   }
@@ -586,7 +569,7 @@ img {
   .support-btn {
     position: relative;
     display: flex;
-    width: 25%;
+    width: 96px;
     right: 0;
     top: 15px;
     margin: 0 auto;
@@ -624,7 +607,8 @@ img {
     width: 100%;
   }
   .main-heading-pgph {
-    width: 100%;
+    margin: 0 auto;
+    width: 95%;
     font-size: 0.92em;
   }
   .our-services-footer {
@@ -632,7 +616,8 @@ img {
     height: auto;
   }
   .our-services-title {
-    margin-top: 0;
+    margin-top: 10px;
+    font-size: 0.9rem;
   }
 
   .our-services-footer {
@@ -652,8 +637,8 @@ img {
     margin-bottom: 15px;
   }
   .card {
-    width: 25em;
-    height: 7em;
+    width: 100%;
+    height: 100px;
     font-size: 1em;
     box-sizing: content-box;
   }
@@ -667,6 +652,10 @@ img {
 
   .text {
     font-size: 0.7em;
+    left: 100px;
+  }
+  .card-title {
+    left: 100px;
   }
   img {
     margin-left: 1em;
@@ -674,35 +663,40 @@ img {
     height: 5em;
   }
   .create-account-btn {
-    width: 18em;
+    margin-top: 0;
     height: 3.5em;
-    line-height: 2.7em;
+    width: 150px;
     font-size: 0.7em;
   }
   .footing-nav {
-    width: 80%;
+    width: 90%;
     height: 10%;
     margin-top: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
   }
   .ready-contact {
     width: 50%;
     margin: 0;
+    margin-right: 15px;
   }
   .btn-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin-left: 5%;
-    width: 51%;
+    /* min-width: 50%; */
   }
   .ready {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .create-act {
-    font-size: 0.8em;
+    width: 120px;
   }
-
   .contact-us {
+    width: 100px;
     font-size: 0.8em;
-    margin-left: 18%;
+    height: 25px;
+    margin-left: 0;
   }
 
   .footer {
@@ -722,12 +716,18 @@ img {
     grid-template-columns: 40% 40%;
     grid-template-rows: 40% 40% 5%;
   }
+  .footer-links {
+    width: 100%;
+  }
   .website {
     margin-bottom: 0;
     margin-top: 6%;
   }
   .email {
     margin-left: 3%;
+    margin-bottom: 0;
+    width: 160px;
+    height: 28px;
   }
   .address {
     margin-top: 5%;
@@ -776,17 +776,19 @@ img {
     font-size: 1.1em;
     font-weight: 800;
   }
-  .email {
-    margin-bottom: 0;
-    height: 28px;
+}
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .main-heading-pgph {
+    font-size: 11px;
+    margin-bottom: 0%;
+    width: 95%;
   }
-  .fa {
-  }
-  .fa-facebook-square {
+  .our-services-title {
+    margin-top: 5%;
   }
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 771px) {
   body {
   }
   .support-btn {
@@ -797,34 +799,76 @@ img {
     top: 15px;
     margin: 0 auto;
   }
+  .main-heading-pgph {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 3%;
+  }
+  .our-services-title {
+    margin-top: 5%;
+  }
+  .card {
+    width: 90%;
+    font-size: 15px;
+    height: 100px;
+  }
   .footing-nav {
     width: 80%;
+    margin-bottom: 4%;
   }
   .ready-contact {
   }
   .btn-container {
     margin-left: 15%;
-    width: 200px;
+    /* width: 200px; */
   }
   .contact-us {
-    margin-left: 17%;
+    height: 25px;
+    text-align: center;
+  }
+  .create-account-btn {
+    width: 165px;
+    text-align: center;
+    height: 27px;
+    margin-bottom: 2%;
   }
   .footer-main {
     width: 470px;
     margin: 0 auto;
   }
   .footer-links {
-    font-size: 14px;
+    font-size: 13.5px;
   }
 }
 /* 600 */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 771px) {
   body {
   }
-}
-/* 768 */
+  .btn-container {
+  }
+  .create-account-btn {
+    height: 30px;
+    line-height: 2em;
+    font-size: 0.8em;
+  }
+  .contact-us {
+    /* height: 3.2em; */
+  }
+  .main-heading-pgph {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .ready-contact {
+    width: 23%;
+  }
 
-@media only screen and (min-width: 768px) and (max-width: 990px) {
+  .footing-nav {
+    margin-bottom: 2%;
+  }
+}
+
+/* 771 */
+@media only screen and (min-width: 771px) and (max-width: 1000px) {
   body {
     overflow-y: scroll;
   }
@@ -873,6 +917,14 @@ img {
   .main {
     min-height: 700px;
   }
+  .main-heading-header {
+    width: 100%;
+  }
+  .main-heading-pgph {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+  }
   .card-box {
     width: 100%;
   }
@@ -906,42 +958,120 @@ img {
     height: 5em;
   }
   .create-account-btn {
-    width: 16.6em;
-    line-height: 1.9em;
+    width: 18em;
+    line-height: 2.7em;
+    font-size: 0.8em;
   }
   .footing-nav {
-    width: 90%;
+    width: 70%;
     height: 20%;
     margin-bottom: 10%;
   }
   .ready-contact {
     width: 50%;
-    height: 25%;
-    margin-left: 5%;
-    margin-right: 0;
   }
+
   .btn-container {
-    width: 30%;
-    height: 25%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .ready {
     font-size: 0.95rem;
   }
   .create-act {
     font-size: 1em;
+    width: 110px;
   }
 
-  .footer {
-    height: 30vh;
+  .contact-us {
+    font-size: 0.9em;
   }
   .footer {
     min-height: 200px;
   }
+  .footer-main {
+    width: 95%;
+  }
+  .address {
+    margin-bottom: 5%;
+    width: 170px;
+  }
+
+  .footer-links {
+    margin-right: 8%;
+  }
 }
 
 /* 990 */
-@media only screen and (min-width: 768px) and (max-width: 990px) {
-  body {
+@media only screen and (min-width: 900px) and (max-width: 1100px) {
+  .nav-options {
+    width: 35%;
+  }
+  .btn-container {
+    display: inline-block;
+    width: 90%;
+  }
+  .ready-contact {
+    margin-left: 40px;
+    margin-right: 120px;
+    width: 60%;
+  }
+  .create-act {
+    width: 100%;
+  }
+
+  .contact-us {
+    font-size: 1em;
+    height: 30px;
+    padding: 6px 15px;
+  }
+  .footing-nav {
+    width: 80%;
+    margin-bottom: 5%;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1199px) {
+  .nav-options {
+    width: 37%;
+  }
+  .login {
+    margin-left: 9%;
+  }
+  .footing-nav {
+    width: 80%;
+    margin-bottom: 3%;
+  }
+  .create-act {
+    width: 100%;
+  }
+
+  .contact-us {
+    padding: 6px 15px;
+  }
+  .ready-contact {
+    margin-right: 30%;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1199px) and (max-width: 1279px) {
+  .nav-options {
+    width: 45%;
+  }
+  .login {
+    margin-left: 10%;
+  }
+  .footing-nav {
+    width: 70%;
+  }
+  .create-act {
+    width: 100%;
+  }
+  .contact-us {
+  }
+  .ready-contact {
+    margin-right: 5%;
+    width: 50%;
   }
 }
