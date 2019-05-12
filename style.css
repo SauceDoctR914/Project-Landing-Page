@@ -412,6 +412,7 @@ img {
 /* FOOTER */
 
 .footer {
+  min-height: 240px;
   overflow-x: hidden;
   display: flex;
   align-items: center;
@@ -980,9 +981,7 @@ img {
   .contact-us {
     font-size: 0.9em;
   }
-  .footer {
-    min-height: 200px;
-  }
+
   .footer-main {
     width: 95%;
   }
@@ -1022,6 +1021,8 @@ img {
   .footing-nav {
     width: 80%;
     margin-bottom: 5%;
+  }
+  .footer {
   }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1199px) {
@@ -1066,5 +1067,28 @@ img {
   .ready-contact {
     margin-right: 5%;
     width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1279px) and (max-width: 1400px) {
+  .learn-how-container {
+    top: 60%;
+  }
+  .learn-how {
+    margin-top: 2%;
+    font-size: 16px;
+  }
+  .down-arrow {
+    margin-top: 20px;
+    width: 55px;
+    height: 55px;
+    line-height: 42.5px;
+  }
+
+  .down-arrow::after {
+    font-size: 55px;
+  }
+  .footing-nav {
+    margin-bottom: 6%;
   }
 }
