@@ -577,7 +577,7 @@ img {
     width: 80px;
   }
   .login {
-    margin-left: 6vw;
+    margin-left: 5vw;
   }
 
   .text-box {
@@ -782,7 +782,6 @@ img {
   .nav-options {
     font-size: 1em;
     left: 15px;
-
   }
   .support-btn {
     top: 51px;
@@ -834,7 +833,7 @@ img {
     margin-right: 6%;
   }
   .login {
-    margin-left: 9vw;
+    margin-left: 8vw;
     margin-right: 0;
   }
   .heading-primary {
@@ -860,6 +859,9 @@ img {
   }
   .btn-search {
     margin-left: 0;
+  }
+  .learn-how-container {
+    bottom: 14%;
   }
   .login {
     margin-left: 7vw;
