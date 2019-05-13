@@ -545,7 +545,7 @@ img {
     width: 100%;
     top: 0;
     background: #754ede;
-    height: 17%;
+    height: 116px;
   }
   .my-web {
     display: inline-block;
@@ -564,11 +564,12 @@ img {
     top: 30px;
     margin: 0;
     font-size: 0.95em;
-    left: 1px;
+    left: 2px;
   }
   .nav-options a {
     margin-right: 5px;
   }
+
   .support-btn {
     position: absolute;
     top: 50px;
@@ -580,15 +581,14 @@ img {
     width: 80px;
   }
   .login {
-    margin-left: 25%;
+    margin-left: 10%;
   }
 
   .text-box {
-    padding-top: 15%;
-    transform: translateY(11%);
+    padding-top: 1%;
+    /* transform: translateY(11%); */
   }
   .heading-primary {
-    padding-top: 10%;
     margin-bottom: 5px;
     height: 100px;
   }
@@ -598,9 +598,8 @@ img {
   .btn-search {
     margin-top: 5px;
   }
-
   .learn-how-container {
-    bottom: 5%;
+    bottom: 4%;
   }
   .main {
     width: 100vw;
@@ -789,13 +788,16 @@ img {
   .nav-options a {
     margin-right: 10px;
   }
+  .learn-how-container {
+    bottom: 5%;
+  }
 
   .login {
     margin-left: 4vw;
     margin-right: 0;
   }
 }
-@media only screen and (min-width: 400px) and (max-width: 600px) {
+@media only screen and (min-width: 399px) and (max-width: 600px) {
   .login {
     margin-left: 13vw;
     margin-right: 0;
@@ -805,6 +807,7 @@ img {
     margin-bottom: 0%;
     width: 95%;
   }
+
   .text-box {
     margin: 10%;
   }
@@ -816,6 +819,11 @@ img {
     margin-top: 5%;
   }
 }
+/* @media only screen and (min-width: 305) and (max-width: 400px) {
+  .learn-how-container {
+    bottom: 0%;
+  }
+} */
 @media only screen and (min-width: 400px) and (max-width: 450px) {
   .nav-options {
     left: 5%;
@@ -827,14 +835,14 @@ img {
     margin-right: 6%;
   }
   .login {
-    margin-left: 10vw;
+    margin-left: 9vw;
     margin-right: 0;
   }
   .heading-primary {
     padding: 0px;
   }
   .learn-how-container {
-    bottom: 3%;
+    bottom: 12%;
   }
 }
 @media only screen and (min-width: 450px) and (max-width: 500px) {
@@ -850,19 +858,19 @@ img {
   }
 
   .login {
-    margin-left: 8vw;
+    margin-left: 7vw;
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 550px) {
-  .navbar {
-    height: 18%;
-  }
   .nav-options {
     font-size: 1.1em;
     left: 25px;
   }
   .support-btn {
     top: 53px;
+  }
+  .learn-how-container {
+    bottom: 13%;
   }
   .nav-options a {
     margin-right: 20px;
@@ -872,18 +880,21 @@ img {
   }
 }
 @media only screen and (min-width: 550px) and (max-width: 600px) {
-  .navbar {
-    height: 18%;
-  }
+  /* .navbar {
+    height: 110px;
+  } */
   .my-web {
     font-size: 2em;
   }
   .nav-options {
     font-size: 1.2em;
-    left: 30px;
+    left: 0px;
   }
   .support-btn {
     top: 58px;
+  }
+  .learn-how-container {
+    bottom: 13%;
   }
   .nav-options a {
     margin-right: 20px;
@@ -928,6 +939,7 @@ img {
     margin-left: 15%;
     /* width: 200px; */
   }
+
   .contact-us {
     height: 25px;
     text-align: center;
@@ -988,7 +1000,7 @@ img {
     font-size: 1em;
   }
   .nav-options a {
-    margin-right: 20px;
+    margin-right: 15px;
     text-decoration: none;
   }
   .nav-options a:nth-child(3) {
@@ -997,7 +1009,7 @@ img {
 
   .login {
     text-decoration: none;
-    margin-left: 7vw;
+    margin-left: 7.5vw;
     margin-right: 0;
   }
 
@@ -1010,9 +1022,6 @@ img {
   }
   .heading-primary {
     padding: 0;
-  }
-  .learn-how-container {
-    bottom: -8%;
   }
 
   .create-account-btn {
@@ -1032,13 +1041,13 @@ img {
   }
 
   .footing-nav {
-    margin: auto;
+    margin-bottom: 2%;
   }
 }
 /* 771 */
 @media only screen and (min-width: 700px) and (max-width: 771px) {
   .nav-options {
-    margin-left: 30vw;
+    margin-left: 28vw;
   }
 }
 /* @media only screen and (min-width: 771px) and (max-width: 801px) {
@@ -1078,7 +1087,7 @@ img {
   }
 
   .login {
-    margin-left: 6.5vw;
+    margin-left: 6vw;
   }
 
   .support-btn {
@@ -1460,15 +1469,18 @@ img {
 @keyframes float {
   0% {
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    webkit-transform: translatey(0px);
     transform: translatey(0px);
   }
 
   50% {
     box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    webkit-transform: translatey(-10px);
     transform: translatey(-10px);
   }
   100% {
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    webkit-transform: translatey(0px);
     transform: translatey(0px);
   }
 }
