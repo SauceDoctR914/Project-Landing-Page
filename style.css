@@ -855,7 +855,10 @@ img {
     margin-left: 15vw;
   }
 }
-@media only screen and (min-width: 550px) and (max-width: 650px) {
+@media only screen and (min-width: 550px) and (max-width: 600px) {
+  .navbar {
+    height: 18%;
+  }
   .my-web {
     font-size: 2em;
   }
@@ -938,6 +941,7 @@ img {
     overflow-y: hidden;
   }
   .navbar {
+    background: rgba(255, 255, 255, 0);
     display: flex;
     flex-direction: column;
     line-height: 6;
@@ -947,44 +951,54 @@ img {
     height: 70px;
     margin: 0;
     top: 0;
-    /* -webkit-transform: translateZ(0); */
   }
 
   .my-web {
-    font-size: 12px;
+    font-size: 1.2em;
     text-decoration: none;
     display: inline-block;
     position: absolute;
     left: 10%;
+    line-height: 70px;
+    transform: translateX(0);
   }
 
   .nav-options {
     position: absolute;
-    right: 10%;
-    width: 45%;
-    font-size: 0.9em;
+    right: 0;
+    top: 0;
+    margin: 0 0 0 23%;
+    width: 65%;
+    font-size: 1em;
   }
   .nav-options a {
     margin-right: 20px;
     text-decoration: none;
   }
+  .nav-options a:nth-child(3) {
+    margin-right: 0px;
+  }
 
   .login {
     text-decoration: none;
-    margin-left: 5%;
+    margin-left: 7vw;
+    margin-right: 0;
   }
 
   .support-btn {
     right: 6%;
+    top: 17px;
   }
   .text-box {
-    transform: translateY(40%);
+    padding-top: 5%;
   }
   .heading-primary {
+    padding: 0;
   }
   .learn-how-container {
-    bottom: 30%;
+    bottom: 2%;
   }
+
   .create-account-btn {
     height: 30px;
     line-height: 2em;
@@ -1006,6 +1020,11 @@ img {
   }
 }
 /* 771 */
+@media only screen and (min-width: 700px) and (max-width: 771px) {
+  .nav-options {
+    margin-left: 30vw;
+  }
+}
 @media only screen and (min-width: 771px) and (max-width: 1000px) {
   body {
     width: 100%;
